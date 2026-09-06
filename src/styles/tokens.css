@@ -1,0 +1,41 @@
+:root {
+  --font-sans: "Plus Jakarta Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --tracking-adjust: 0.02em;
+  --tracking-tighter: calc(-0.05em + var(--tracking-adjust));
+  --tracking-tight: calc(-0.025em + var(--tracking-adjust));
+  --tracking-normal: calc(0em + var(--tracking-adjust));
+
+  --white: #fff;
+  --page: #f5f5f7;
+  --dark: #131313;
+  --dark-2: #191815;
+  --dark-3: #2f2f2f;
+  --ink: #0a0a09;
+  --grey-100: #ededed;
+  --grey-200: #ececec;
+  --grey-300: #c7c7c7;
+  --grey-400: #454541;
+  --grey-500: #63635e;
+  --green: #d6fd70;
+  --green-deep: #c2ef4e;
+  --green-ink: #516812;
+  --blue: #2453ff;
+  --on-dark: #f2f2f2;
+  --on-dark-muted: #a6a69e;
+  --dark-line: #f2f2f229;
+  --line: #0a0a0924;
+  --line-2: #0a0a0938;
+
+  --radius: 2.15rem;
+  --radius-lg: 3rem;
+  --radius-sm: 0.75rem;
+  --radius-card-md: 1.5rem;
+  --radius-control: 999px;
+
+  --inset: 0.55rem;
+  --navbar-top: 24px;
+  --navbar-height: 60px;
+  --max: 1280px;
+  --ease: cubic-bezier(0.19, 1, 0.22, 1);
+}
