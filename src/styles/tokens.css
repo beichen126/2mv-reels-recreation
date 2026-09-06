@@ -38,4 +38,34 @@
   --navbar-height: 60px;
   --max: 1280px;
   --ease: cubic-bezier(0.19, 1, 0.22, 1);
+
+  /* ==== Semantic tokens (Stage 5C reconstructed design system) ==== */
+  /* Surfaces */
+  --bg: #000;
+  --surface: #fff;
+  --surface-tint: var(--page);
+  --surface-glass: rgba(255, 255, 255, 0.1);
+  --surface-glass-dark: rgba(242, 242, 242, 0.06);
+  --surface-glass-dark-2: rgba(242, 242, 242, 0.03);
+  --surface-glass-dark-line: rgba(242, 242, 242, 0.16);
+  --surface-track: rgba(242, 242, 242, 0.08);
+  /* Text */
+  --text-primary: var(--ink);
+  --text-secondary: var(--grey-400);
+  --text-muted: var(--grey-500);
+  --text-on-dark: var(--on-dark);
+  --text-on-dark-muted: var(--on-dark-muted);
+  --text-caption: #f2f2f2b3;
+  --text-caption-soft: #f2f2f273;
+  /* Lines */
+  --border-line: var(--line);
+  --border-line-2: var(--line-2);
+  --border-dark: var(--dark-line);
+  /* Marks & chrome */
+  --mark-symbol-bg: rgba(10, 10, 9, 0.06);
+  --tagline-dot: #c2ef4e;
+  --tagline-dot-ring: rgba(194, 239, 78, 0.22);
+  --insta-blue: #0095f6;
+  --weight-pill-bg: #c2ef4e40;
+  --hhl-bg: #131313;
 }
