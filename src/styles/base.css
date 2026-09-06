@@ -14,7 +14,7 @@ html {
 
 body {
   font-family: var(--font-sans), "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: var(--ink);
+  color: #000;
   background: transparent;
   letter-spacing: var(--tracking-adjust);
   line-height: 1.5;
