@@ -337,10 +337,10 @@
   padding-block: 1rem;
   padding-inline: 1.75rem;
   font-size: 0.72rem;
-  font-weight: 500;
+  font-weight: 400;
   display: grid;
-  gap: 1.5rem;
-  align-items: center;
+  gap: 0.75rem 1.5rem;
+  align-items: start;
 }
 .is-dark .az-table-head {
   color: #f2f2f266;
@@ -439,7 +439,7 @@
   color: var(--grey-300);
   font-size: 0.92rem;
   font-weight: 600;
-  letter-spacing: var(--tracking-tight);
+  letter-spacing: normal;
 }
 .az-beat-label {
   letter-spacing: var(--tracking-tight);
@@ -502,8 +502,8 @@
   width: 18px;
   height: 18px;
   margin-top: 3px;
-  font-size: 0.7rem;
-  font-weight: 700;
+  font-size: 0.62rem;
+  font-weight: 600;
   display: flex;
 }
 .az-mark--x {
@@ -513,6 +513,7 @@
 .az-mark--check {
   color: var(--ink);
   background: var(--green);
+  font-weight: 400;
 }
 
 /* ======================= FAQ ======================= */
@@ -805,11 +806,12 @@
   font-weight: 400;
 }
 .foot-col a {
-  letter-spacing: normal;
-  color: var(--on-dark);
-  font-size: 0.95rem;
-  padding: 0.4rem 0;
-  opacity: 0.85;
+  letter-spacing: var(--tracking-tight);
+  color: #c7c7c1;
+  font-size: 1rem;
+  line-height: 1.2;
+  padding: 0.45rem 0;
+  opacity: 1;
   transition: opacity 0.2s ease;
 }
 .foot-col a:hover {
@@ -863,6 +865,7 @@
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .az-trend-card {
+  letter-spacing: normal;
   border-radius: var(--radius-card-md);
   cursor: pointer;
   transition: border-color 0.3s var(--ease), background-color 0.3s var(--ease), transform 0.3s var(--ease);
@@ -965,6 +968,7 @@
   padding: 0.75rem 0.4rem 0.25rem;
 }
 .az-trend-label {
+  letter-spacing: normal;
   color: #f2f2f2b3;
   justify-content: space-between;
   align-items: center;
