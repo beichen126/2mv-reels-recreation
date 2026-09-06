@@ -21,6 +21,7 @@
 }
 
 .az-crumbs {
+  letter-spacing: normal;
   color: var(--on-dark-muted);
   flex-wrap: wrap;
   align-items: center;
@@ -31,6 +32,9 @@
 .az-crumb .sep {
   margin: 0 0.25rem;
   opacity: 0.5;
+}
+.az-crumb [aria-current] {
+  color: var(--on-dark);
 }
 .az-crumb a:hover {
   color: var(--on-dark);
@@ -47,7 +51,7 @@
 .az-hero-sub {
   color: var(--on-dark-muted);
   display: block;
-  margin-top: 0.9rem;
+  margin-top: 0;
 }
 .az-hero-lead {
   max-width: 54ch;
@@ -108,9 +112,10 @@
   font-size: 0.94rem;
 }
 .az-chat-input::placeholder {
-  color: var(--on-dark-muted);
+  color: rgba(242, 242, 242, 0.35);
 }
 .az-chat-hint {
+  letter-spacing: normal;
   color: var(--on-dark-muted);
   margin-top: 0.75rem;
   font-size: 0.82rem;
@@ -119,6 +124,7 @@
 /* Analyzer preview (.azp) */
 .azp {
   border-radius: var(--radius-card-md);
+  max-width: 514px;
   width: 100%;
   height: 368px;
   color: var(--ink);
@@ -276,7 +282,7 @@
   color: var(--on-dark);
 }
 .az-intro {
-  max-width: 58ch;
+  max-width: 56ch;
   color: var(--grey-400);
   margin-top: 1.2rem;
   font-size: clamp(1.02rem, 1.4vw, 1.12rem);
@@ -707,7 +713,7 @@
   width: 4rem;
   font-size: 1.6rem;
   font-weight: 700;
-  letter-spacing: -0.04em;
+  letter-spacing: var(--tracking-adjust);
   line-height: 1;
   display: block;
 }
@@ -815,6 +821,7 @@
 }
 .foot-copy {
   letter-spacing: calc(0.06em + var(--tracking-adjust));
+  text-transform: lowercase;
   color: var(--on-dark-muted);
   font-size: 0.75rem;
 }
@@ -831,13 +838,15 @@
 }
 .az-trend-title {
   letter-spacing: calc(0.14em + var(--tracking-adjust));
-  text-transform: uppercase;
+  text-transform: lowercase;
   color: #f2f2f28c;
   font-size: 0.92rem;
   font-weight: 600;
   line-height: 1.1;
 }
 .az-trend-hint {
+  text-transform: lowercase;
+  letter-spacing: normal;
   color: #f2f2f259;
   font-size: 0.82rem;
 }

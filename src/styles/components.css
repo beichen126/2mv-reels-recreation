@@ -101,7 +101,7 @@
   width: 58px;
   font-size: 1.32rem;
   font-weight: 700;
-  letter-spacing: -0.04em;
+  letter-spacing: var(--tracking-adjust);
   line-height: 1;
   display: block;
 }
