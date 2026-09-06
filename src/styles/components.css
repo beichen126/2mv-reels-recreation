@@ -219,6 +219,10 @@
   color: #fff;
   background: #141414;
 }
+/* label renders lowercase (original: <a> uppercase, inner span lowercase) */
+.site-navbar__cta-label {
+  text-transform: lowercase;
+}
 
 /* ===== Buttons (.act-btn) ===== */
 .act-btn {
@@ -452,6 +456,7 @@
   margin-top: 0.7rem;
   font-size: 0.94rem;
   line-height: 1.55;
+  letter-spacing: normal;
 }
 .is-dark .az-card-body {
   color: var(--on-dark-muted);
