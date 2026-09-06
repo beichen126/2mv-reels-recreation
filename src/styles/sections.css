@@ -253,6 +253,7 @@
   transform: rotate(2deg);
 }
 .azp-loop p {
+  letter-spacing: normal;
   color: var(--grey-400);
   font-size: 0.78rem;
   line-height: 1.4;
@@ -604,6 +605,7 @@
   padding: 0 1.5rem 1.5rem;
   font-size: 0.98rem;
   line-height: 1.6;
+  letter-spacing: normal;
 }
 
 /* ======================= RELATED CARDS ======================= */
@@ -803,6 +805,7 @@
   font-weight: 400;
 }
 .foot-col a {
+  letter-spacing: normal;
   color: var(--on-dark);
   font-size: 0.95rem;
   padding: 0.4rem 0;
@@ -976,6 +979,7 @@
   white-space: nowrap;
 }
 .az-trend-read {
+  letter-spacing: normal;
   color: #f2f2f273;
   margin-top: 0.4rem;
   font-size: 0.82rem;
