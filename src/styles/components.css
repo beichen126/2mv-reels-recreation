@@ -370,6 +370,14 @@
   display: inline-flex;
   width: auto;
 }
+.tagline::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+  flex: none;
+}
 .tagline.on-dark {
   letter-spacing: calc(0.1em + var(--tracking-adjust));
   color: var(--ink);

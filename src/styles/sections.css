@@ -383,6 +383,12 @@
 .is-dark .az-cell-body {
   color: var(--on-dark-muted);
 }
+.az-cell-body.strong {
+  font-weight: 600;
+}
+.is-dark .az-cell-body.strong {
+  color: var(--on-dark);
+}
 .az-weight {
   color: var(--ink);
   letter-spacing: calc(0.04em + var(--tracking-adjust));
@@ -454,6 +460,9 @@
 }
 .is-dark .az-card--line {
   border-color: var(--dark-line);
+}
+.users-section .az-card {
+  background: var(--page);
 }
 .az-myth-head {
   letter-spacing: var(--tracking-tight);
@@ -928,6 +937,7 @@
 
 /* ======================= CONTENT RESPONSIVE (Stage 3A) ======================= */
 @media (max-width: 1024px) {
+  .az-grid.cols-2,
   .az-grid.cols-3 {
     grid-template-columns: minmax(0, 1fr);
   }

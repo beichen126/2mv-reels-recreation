@@ -183,3 +183,135 @@ export const eightAxes: { tagline: string; title: string; intro: string; items: 
     { num: '08', title: 'audience profile', body: 'who the video is actually landing with, and why it resonates.' },
   ],
 }
+
+export interface MythItem {
+  myth: string
+  real: string
+}
+
+export const mythsData: { tagline: string; title: string; items: MythItem[] } = {
+  tagline: 'myths vs data',
+  title: 'most reels advice is describing an algorithm that no longer exists.',
+  items: [
+    {
+      myth: 'there is one best time to post reels.',
+      real: 'reels are distributed by recommendation, not chronology. a strong reel keeps accumulating reach for days; timing shifts the first hour, not the ceiling.',
+    },
+    {
+      myth: 'hashtags decide reach.',
+      real: 'hashtags are weak topic hints. the content signal — what is actually in the frames and audio — carries far more weight.',
+    },
+    {
+      myth: 'you need followers to break out.',
+      real: 'the reels system tests content against non-followers first. early watch time and sends decide expansion, which is why accounts under 1k still hit millions.',
+    },
+    {
+      myth: 'longer reels get suppressed.',
+      real: 'length is not penalised — unfinished watch time is. a 60-second reel that holds beats a 12-second reel people swipe past.',
+    },
+    {
+      myth: 'deleting a low-view reel helps the account.',
+      real: 'there is no account-level punishment to undo. each reel is tested largely on its own merits.',
+    },
+  ],
+}
+
+export interface MetricRow {
+  metric: string
+  what: string
+  use: string
+}
+
+export const metricsData: { tagline: string; title: string; intro: string; rows: MetricRow[] } = {
+  tagline: 'instagram reels analytics',
+  title: 'which reels metrics actually mean something.',
+  intro:
+    'instagram insights covers your own account. read these six the right way, then use the analyzer to explain what caused them.',
+  rows: [
+    {
+      metric: 'views / plays',
+      what: 'how many times the reel started playing, replays included.',
+      use: 'a volume number only. never read it without watch time next to it.',
+    },
+    {
+      metric: 'reach vs views',
+      what: 'unique accounts vs total plays.',
+      use: 'views far above reach means people replayed — your loop is working.',
+    },
+    {
+      metric: 'average watch time',
+      what: 'seconds held per play against run length.',
+      use: 'the retention truth. under 40% of run length points at a broken promise beat.',
+    },
+    {
+      metric: 'sends per reach',
+      what: 'shares to dms and stories, normalised.',
+      use: 'the single best predictor of expansion. optimise the payoff frame for it.',
+    },
+    {
+      metric: 'saves per reach',
+      what: 'how often the reel got kept.',
+      use: 'signals reference value. high saves with low sends means useful but not social.',
+    },
+    {
+      metric: 'follows from reel',
+      what: 'new follows attributed to the reel.',
+      use: 'tells you whether the reel sold the account or just the clip.',
+    },
+  ],
+}
+
+export const usersData: { tagline: string; title: string; items: { name: string; body: string }[] } = {
+  tagline: 'who uses it',
+  title: 'for everyone deciding which reel to film next.',
+  items: [
+    {
+      name: 'brand social teams',
+      body: "turn a scroll session through your category's top reels into a brief your editors can shoot without a rewrite.",
+    },
+    {
+      name: 'creators',
+      body: 'find the reels winning in your niche, then rebuild the structure — hook device, beat map, loop close — with your own footage.',
+    },
+    {
+      name: 'agencies',
+      body: "run the same reels teardown process across every client account instead of relying on one strategist's instinct.",
+    },
+    {
+      name: 'competitor research',
+      body: 'see which reel formats a rival account is compounding on, and how their sendable moment is engineered.',
+    },
+  ],
+}
+
+export interface RelatedCard {
+  title: string
+  body: string
+  href: string
+}
+
+export const relatedData: { tagline: string; items: RelatedCard[] } = {
+  tagline: 'keep going',
+  items: [
+    {
+      title: 'ai video analyzer',
+      body: 'the hub page: how the analyzer works across tiktok, reels and shorts.',
+      href: '/ai-video-analyzer',
+    },
+    {
+      title: '2mv studio',
+      body: 'the full platform — continuous niche monitoring, patterns and playbooks.',
+      href: '/studio',
+    },
+    {
+      title: '2mv tools',
+      body: 'every free utility built on the research loop, in one place.',
+      href: '/tools',
+    },
+    {
+      title: 'blog',
+      body: 'guides, trends and original research on short-form and organic growth.',
+      href: '/blog',
+    },
+  ],
+}
