@@ -315,3 +315,94 @@ export const relatedData: { tagline: string; items: RelatedCard[] } = {
     },
   ],
 }
+
+export interface FaqItem {
+  q: string
+  a: string
+}
+
+export const faqData: { title: string[]; items: FaqItem[] } = {
+  title: ['instagram reels', 'questions,', 'answered.'],
+  items: [
+    {
+      q: 'how do i see analytics on instagram reels?',
+      a: "instagram gives you views, reach, watch time, likes, comments, saves and sends inside professional dashboard for your own account only. 2mv works on the other side of that wall: it analyzes any public reel — including competitors' — frame by frame and explains what produced those numbers.",
+    },
+    {
+      q: 'why is my reel not getting views?',
+      a: 'in almost every teardown it comes down to one of three things: no promise beat in the first three seconds, a repeated shot that stalls new information, or a payoff that arrives after the audience already left. the breakdown names which one applies to your reel.',
+    },
+    {
+      q: 'is there a free instagram reels analyzer?',
+      a: 'platform insights are free but limited to your own posts. 2mv is a paid analyzer because it decodes any public reel at frame level and keeps monitoring your niche continuously — see pricing for the current plans.',
+    },
+    {
+      q: 'how do you analyze a viral reel?',
+      a: 'paste the reel url. the video is decoded shot by shot, then read across eight axes — topic, hook, pattern, content flow, visuals, audio, viewer psychology and audience — and returned as a beat map with hook directions you can film.',
+    },
+    {
+      q: 'does this work for reels from accounts i do not own?',
+      a: 'yes. any public reel can be analyzed, which is the point — competitor and niche research is where most of the value sits.',
+    },
+    {
+      q: 'how many hashtags should a reel use?',
+      a: 'hashtags are a minor topic hint in 2026. three to five relevant ones is plenty; the content signal inside the frames and audio decides distribution.',
+    },
+    {
+      q: 'does the analyzer generate reels for me?',
+      a: 'no. it outputs direction — angles, hooks, structure, pacing, visual and audio guidance. filming and editing stay with you or your editor.',
+    },
+  ],
+}
+
+export const ctaData: { lead: string; hl: string; sub: string; startHref: string; demoHref: string } = {
+  lead: 'Turn organic growth into',
+  hl: 'a repeatable engine.',
+  sub: 'Organic growth you can see, measure, and repeat.',
+  startHref: '/studio',
+  demoHref: '/book-a-demo',
+}
+
+export interface FooterLink {
+  text: string
+  href: string
+}
+
+export const footerData: {
+  brand: string
+  slogan: string
+  newsLabel: string
+  columns: { label: string; links: FooterLink[] }[]
+  copyright: string
+} = {
+  brand: '2mv',
+  slogan: 'from zero to millions of views.',
+  newsLabel: 'Newsletters for viral trends, go-to-market insights, and growth strategies.',
+  columns: [
+    {
+      label: 'explore',
+      links: [
+        { text: 'service', href: '/' },
+        { text: 'studio', href: '/studio' },
+        { text: 'ai video analyzer', href: '/ai-video-analyzer' },
+        { text: 'instagram reels analyzer', href: '/ai-video-analyzer/instagram-reels' },
+        { text: 'tiktok video analyzer', href: '/ai-video-analyzer/tiktok' },
+        { text: 'youtube shorts analyzer', href: '/ai-video-analyzer/youtube-shorts' },
+        { text: 'tools', href: '/tools' },
+        { text: 'blog', href: '/blog' },
+      ],
+    },
+    {
+      label: 'connect',
+      links: [{ text: 'book a demo', href: '/book-a-demo' }],
+    },
+    {
+      label: 'legal',
+      links: [
+        { text: 'privacy policy', href: '/privacy-policy' },
+        { text: 'terms of use', href: '/terms-of-service' },
+      ],
+    },
+  ],
+  copyright: '© 2026 2mv. All rights reserved.',
+}

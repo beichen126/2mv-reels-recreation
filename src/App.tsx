@@ -8,6 +8,9 @@ import MythsSection from './sections/MythsSection'
 import MetricsSection from './sections/MetricsSection'
 import UsersSection from './sections/UsersSection'
 import RelatedSection from './sections/RelatedSection'
+import FaqSection from './sections/FaqSection'
+import CtaSection from './sections/CtaSection'
+import Footer from './sections/Footer'
 
 export default function App() {
   return (
@@ -22,6 +25,9 @@ export default function App() {
       <MetricsSection />
       <UsersSection />
       <RelatedSection />
+      <FaqSection />
+      <CtaSection />
+      <Footer />
     </div>
   )
 }
