@@ -22,7 +22,7 @@
   max-width: var(--max);
   margin-inline: auto;
   width: 100%;
-  padding: clamp(2.4rem, 6vw, 6rem) clamp(1.25rem, 4vw, 4rem);
+  padding: clamp(2.6rem, 6.6vw, 7rem) clamp(1.25rem, 4vw, 4rem);
 }
 
 /* ===== Reveal-on-scroll ===== */

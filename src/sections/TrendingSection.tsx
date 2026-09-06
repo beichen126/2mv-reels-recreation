@@ -13,6 +13,7 @@ export default function TrendingSection() {
           <div role="button" tabIndex={0} aria-label={`use ${r.label} reel in analyzer`} className="az-trend-card" key={r.label}>
             <div className="az-embed">
               <div className="az-embed-bg" style={{ background: r.gradient }} />
+              <div className="az-embed-texture" />
               <div className="az-embed-top">
                 <span className="az-embed-avatar" />
                 <span className="az-embed-handle">{r.handle}</span>
