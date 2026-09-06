@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="section az-section az-hero is-dark">
       <div className="inner inner--hero">
         <div className="az-hero-grid">
-          <div className="az-hero-copy">
+          <div className="az-hero-copy reveal">
             <nav aria-label="Breadcrumb" className="az-crumbs">
               <span className="az-crumb">
                 <a href="/">home</a>
@@ -36,7 +36,7 @@ export default function Hero() {
             <UrlAnalyzerForm />
           </div>
 
-          <div className="az-hero-visual">
+          <div className="az-hero-visual reveal">
             <AnalyzerPreview />
           </div>
         </div>

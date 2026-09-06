@@ -1,3 +1,4 @@
+import { useReveal } from './hooks/useReveal'
 import Navbar from './sections/Navbar'
 import Hero from './sections/Hero'
 import WhySection from './sections/WhySection'
@@ -13,6 +14,8 @@ import CtaSection from './sections/CtaSection'
 import Footer from './sections/Footer'
 
 export default function App() {
+  useReveal()
+
   return (
     <div className="page">
       <Navbar />

@@ -6,7 +6,7 @@ export default function AnalysisAxesSection() {
     <section className="section az-section is-dark">
       <div className="inner">
         <SectionHeader tagline={eightAxes.tagline} dark title={eightAxes.title} intro={eightAxes.intro} titleMax="24ch" />
-        <div className="az-grid cols-4">
+        <div className="az-grid cols-4 reveal">
           {eightAxes.items.map((i) => (
             <article className="az-card" key={i.num}>
               <p className="az-num">{i.num}</p>

@@ -6,7 +6,7 @@ export default function WhySection() {
     <section className="section az-section az-tint">
       <div className="inner">
         <SectionHeader tagline={whyReels.tagline} title={whyReels.title} intro={whyReels.intro} />
-        <div className="az-grid cols-3">
+        <div className="az-grid cols-3 reveal">
           {whyReels.items.map((i) => (
             <article className="az-card" key={i.num}>
               <p className="az-num">{i.num}</p>

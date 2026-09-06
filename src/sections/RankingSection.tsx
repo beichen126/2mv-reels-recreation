@@ -6,7 +6,7 @@ export default function RankingSection() {
     <section id="reels-signals" className="section az-section is-dark">
       <div className="inner">
         <SectionHeader tagline={rankingSignals.tagline} dark title={rankingSignals.title} titleMax="28ch" />
-        <div className="az-table az-table--signals">
+        <div className="az-table az-table--signals reveal">
           <div className="az-table-head">
             <span>signal</span>
             <span>weight</span>

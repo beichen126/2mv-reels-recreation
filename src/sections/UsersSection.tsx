@@ -6,7 +6,7 @@ export default function UsersSection() {
     <section className="section az-section users-section">
       <div className="inner">
         <SectionHeader tagline={usersData.tagline} title={usersData.title} />
-        <dl className="az-grid cols-2">
+        <dl className="az-grid cols-2 reveal">
           {usersData.items.map((u) => (
             <div className="az-card" key={u.name}>
               <dt className="az-card-title">{u.name}</dt>

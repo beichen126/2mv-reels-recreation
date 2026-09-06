@@ -5,7 +5,7 @@ export default function RelatedSection() {
     <section className="section az-section is-dark">
       <div className="inner">
         <span className="tagline on-dark">{relatedData.tagline}</span>
-        <div className="az-grid cols-4">
+        <div className="az-grid cols-4 reveal">
           {relatedData.items.map((r) => (
             <a className="az-card az-related-card" href={r.href} key={r.title}>
               <p className="az-card-title">{r.title}</p>

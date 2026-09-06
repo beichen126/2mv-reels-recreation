@@ -6,7 +6,7 @@ export default function MetricsSection() {
     <section className="section az-section is-dark">
       <div className="inner">
         <SectionHeader tagline={metricsData.tagline} dark title={metricsData.title} intro={metricsData.intro} />
-        <div className="az-table az-table--metrics">
+        <div className="az-table az-table--metrics reveal">
           <div className="az-table-head">
             <span>metric</span>
             <span>what it means</span>

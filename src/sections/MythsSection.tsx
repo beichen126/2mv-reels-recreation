@@ -6,7 +6,7 @@ export default function MythsSection() {
     <section className="section az-section az-tint">
       <div className="inner">
         <SectionHeader tagline={mythsData.tagline} title={mythsData.title} titleMax="28ch" />
-        <div className="az-grid cols-2">
+        <div className="az-grid cols-2 reveal">
           {mythsData.items.map((m, i) => (
             <article className="az-card az-card--line" key={i}>
               <p className="az-myth-head">

@@ -17,7 +17,7 @@ body {
   color: var(--ink);
   background: transparent;
   letter-spacing: var(--tracking-adjust);
-  line-height: 1.75;
+  line-height: 1.5;
   font-size: 1rem;
 }
 
