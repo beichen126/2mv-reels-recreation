@@ -16,11 +16,13 @@ export default function TrendingSection() {
               <div className="az-embed-top">
                 <span className="az-embed-avatar" />
                 <span className="az-embed-handle">{r.handle}</span>
+                <span className="az-embed-follow">follow</span>
               </div>
               <span className="az-embed-play" aria-hidden="true">
                 <Play />
               </span>
               <span className="az-embed-cap">{r.caption}</span>
+              <span className="az-embed-watch">watch on instagram</span>
             </div>
             <div className="az-trend-meta">
               <p className="az-trend-label">
