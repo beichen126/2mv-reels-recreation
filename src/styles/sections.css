@@ -6,8 +6,8 @@
   min-height: calc(100svh - var(--inset) * 2);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-top: clamp(4.5rem, 9svh, 6.5rem);
+  justify-content: flex-start;
+  padding-top: clamp(8rem, 12vw, 10rem);
   padding-bottom: clamp(2.5rem, 5svh, 3.5rem);
 }
 .az-hero-grid {
@@ -319,7 +319,7 @@
 }
 .is-dark .az-table {
   border-color: var(--dark-line);
-  background: #0a0a090a;
+  background: transparent;
 }
 .az-table-head {
   letter-spacing: calc(0.1em + var(--tracking-adjust));
