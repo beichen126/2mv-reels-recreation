@@ -46,3 +46,11 @@ export function X(props: IconProps) {
     </svg>
   )
 }
+
+export function Play(props: IconProps) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" stroke="none" {...props}>
+      <path d="M8 5.14v13.72a1 1 0 0 0 1.53.85l10.72-6.86a1 1 0 0 0 0-1.7L9.53 4.29A1 1 0 0 0 8 5.14z" />
+    </svg>
+  )
+}

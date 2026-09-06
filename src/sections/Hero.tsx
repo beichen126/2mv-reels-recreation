@@ -1,5 +1,6 @@
 import AnalyzerPreview from './AnalyzerPreview'
 import UrlAnalyzerForm from './UrlAnalyzerForm'
+import TrendingSection from './TrendingSection'
 
 export default function Hero() {
   return (
@@ -39,6 +40,8 @@ export default function Hero() {
             <AnalyzerPreview />
           </div>
         </div>
+
+        <TrendingSection />
       </div>
     </section>
   )
