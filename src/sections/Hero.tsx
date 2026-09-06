@@ -1,8 +1,12 @@
+import { siteHref } from '../lib/siteHref'
+import { useState } from 'react'
 import AnalyzerPreview from './AnalyzerPreview'
 import UrlAnalyzerForm from './UrlAnalyzerForm'
 import TrendingSection from './TrendingSection'
 
 export default function Hero() {
+  const [url, setUrl] = useState('')
+  const [file, setFile] = useState<File | null>(null)
   return (
     <section className="section az-section az-hero is-dark">
       <div className="inner inner--hero">
@@ -10,11 +14,11 @@ export default function Hero() {
           <div className="az-hero-copy reveal">
             <nav aria-label="Breadcrumb" className="az-crumbs">
               <span className="az-crumb">
-                <a href="/">home</a>
+                <a href={siteHref('/')}>home</a>
               </span>
               <span className="az-crumb">
                 <span aria-hidden="true" className="sep"> / </span>
-                <a href="/ai-video-analyzer">ai video analyzer</a>
+                <a href={siteHref('/ai-video-analyzer')}>ai video analyzer</a>
               </span>
               <span className="az-crumb">
                 <span aria-hidden="true" className="sep"> / </span>
@@ -33,7 +37,7 @@ export default function Hero() {
               film next.
             </p>
 
-            <UrlAnalyzerForm />
+            <UrlAnalyzerForm url={url} setUrl={setUrl} file={file} setFile={setFile} />
           </div>
 
           <div className="az-hero-visual reveal">
@@ -41,7 +45,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <TrendingSection />
+        <TrendingSection onSelectReel={(reelUrl) => { setUrl(reelUrl); setFile(null) }} />
       </div>
     </section>
   )

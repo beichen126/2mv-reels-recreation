@@ -17,7 +17,7 @@ export default function AnalyzerPreview() {
           <span>0:22</span>
         </div>
         <div className="azp-progress">
-          <span style={{ width: '100%' }} />
+          <span />
         </div>
         <div className="azp-beats">
           {BEATS.map((b) => (

@@ -32,7 +32,7 @@ export default function FaqSection() {
                     </svg>
                   </span>
                 </button>
-                <div className="az-faq-panel" id={`az-faq-panel-${i}`}>
+                <div className="az-faq-panel" id={`az-faq-panel-${i}`} inert={!isOpen}>
                   <div className="az-faq-panel-inner">
                     <p className="az-faq-a">{item.a}</p>
                   </div>

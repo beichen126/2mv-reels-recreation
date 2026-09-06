@@ -16,7 +16,7 @@ body {
   font-family: var(--font-sans), "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #000;
   background: transparent;
-  letter-spacing: var(--tracking-adjust);
+  letter-spacing: normal;
   line-height: 1.5;
   font-size: 1rem;
 }
@@ -53,6 +53,11 @@ h2,
 h3,
 h4 {
   font-weight: 600;
+}
+
+.page,
+.page * {
+  text-transform: lowercase;
 }
 
 ::selection {

@@ -1,3 +1,4 @@
+import { siteHref } from '../lib/siteHref'
 import { ctaData } from '../data/content'
 import { ArrowUpRight } from '../components/Icons'
 
@@ -12,13 +13,13 @@ export default function CtaSection() {
         </h2>
         <p className="cta-sub">{ctaData.sub}</p>
         <div className="cta-actions">
-          <a className="act-btn act-btn--black act-btn--md" href={ctaData.startHref} target="_blank" rel="noopener noreferrer">
+          <a className="act-btn act-btn--black act-btn--md" href={siteHref(ctaData.startHref)} target="_blank" rel="noopener noreferrer">
             <span className="act-btn__label">start for free</span>
             <span className="act-btn__icon" aria-hidden="true">
               <ArrowUpRight />
             </span>
           </a>
-          <a className="act-btn act-btn--secondary act-btn--md" href={ctaData.demoHref} target="_blank" rel="noopener noreferrer">
+          <a className="act-btn act-btn--secondary act-btn--md" href={siteHref(ctaData.demoHref)} target="_blank" rel="noopener noreferrer">
             <span className="act-btn__label">book a demo</span>
             <span className="act-btn__icon" aria-hidden="true">
               <ArrowUpRight />

@@ -1,13 +1,11 @@
 // Content for the long page. Copy drawn from the Stage 1 runtime DOM (public page),
-// with third-party media replaced by designed static placeholders.
+// including the public Instagram embeds used on the reference page.
 
 export interface TrendingReel {
   label: string
   stat: string
   read: string
-  handle: string
-  caption: string
-  gradient: string
+  embedId: string
 }
 
 export const trendingReels: TrendingReel[] = [
@@ -15,33 +13,25 @@ export const trendingReels: TrendingReel[] = [
     label: 'most-viewed reel of the week',
     stat: '70m+ views',
     read: 'single-frame hook, no intro card',
-    handle: '@2mv',
-    caption: 'most-viewed reel on instagram',
-    gradient: 'linear-gradient(160deg, #2b1a3d 0%, #14100f 55%, #0a0a09 100%)',
+    embedId: 'DYCtgNFTemj',
   },
   {
     label: 'growth breakdown reel',
     stat: '80m views / 6 months',
     read: 'claim-first hook, sendable proof',
-    handle: '@2mv',
-    caption: 'from 0 to 80m in six months',
-    gradient: 'linear-gradient(160deg, #0d2438 0%, #0f1218 55%, #0a0a09 100%)',
+    embedId: 'DaQyBxSBJEY',
   },
   {
     label: 'comment-trigger reel',
     stat: '30m+ views / 90 days',
     read: 'comment-word cta drives replies',
-    handle: '@2mv',
-    caption: 'say the word to unlock part two',
-    gradient: 'linear-gradient(160deg, #241a12 0%, #12100e 55%, #0a0a09 100%)',
+    embedId: 'DZLOwn4BEjD',
   },
   {
     label: 'travel aesthetic reel',
     stat: '121.1k views',
     read: 'beauty frame loops back to frame 1',
-    handle: '@2mv',
-    caption: 'the color grade that loops',
-    gradient: 'linear-gradient(160deg, #1e2620 0%, #10140f 55%, #0a0a09 100%)',
+    embedId: 'DbzZF7gD1qE',
   },
 ]
 

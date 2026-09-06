@@ -1,47 +1,37 @@
 # Instagram Reels Analyzer — Frontend Recreation
 
-A frontend recreation exercise: a single-page recreation of the 2mv **Instagram Reels Analyzer** landing page, built to match the original's visual system (layout, type, spacing, components, responsive behavior, interactions).
+A React 19 + TypeScript + Vite recreation of [2mv's Instagram Reels Analyzer](https://www.2mv.ai/ai-video-analyzer/instagram-reels), with self-hosted Plus Jakarta Sans and plain CSS.
 
-## Implementation
+## Run and verify
 
-- **React 19** + **TypeScript**
-- **Vite** (build tool & dev server)
-- Plain **CSS** with a design-token system (`src/styles/tokens.css`) — semantic tokens (`--bg`, `--surface`, `--text-*`, `--border-*`, glass/surface tints) and BEM-style component classes
-- **Plus Jakarta Sans** self-hosted via `@fontsource/plus-jakarta-sans` (no CDN dependency; loads offline)
-
-## Key Focus
-
-- **Visual fidelity** — pixel-driven reconstruction validated against original screenshots (overlay / side-by-side diff)
-- **Responsive recreation** — 1440 / 1280 / 768 / 390 with grid degradation, table stacking, and an adaptive fixed navbar
-- **Component decomposition** — sections split into `src/sections/*`, UI atoms (cards, pills, buttons, accordion) under `src/components/*`, content in `src/data/content.ts`
-- **Interaction recreation** — FAQ accordion (grid-rows transition), scroll-reveal, call-to-action hover states, adaptive navbar (dark/light/green background awareness)
-
-## Run Locally
-
-```bash
+```sh
 npm install
 npm run dev
 ```
 
-Production build:
+With the dev server running, use a second terminal:
 
-```bash
+```sh
 npm run build
+npm run lint
+npm test
 ```
 
-## Implementation Decisions
+The browser test uses installed Microsoft Edge. Override `BROWSER_CHANNEL` for another installed Playwright browser channel and `TEST_URL` when serving on a different address (default: `http://127.0.0.1:5173`).
 
-- **Static mock analyzer data** — the frame-by-frame analyzer preview is a designed static mock (no real video analysis backend), since the scope is a visual/behavioral recreation.
-- **No real Instagram / AI API** — trending reels and the analyzer never call Instagram or any AI backend; behavior is reproduced client-side.
-- **Responsive tables** — data tables collapse to stacked cards below 1024px and hide the header row, preserving information without horizontal scroll.
-- **Media embed fallback** — the original uses genuine Instagram video embeds (cross-origin, unstable). This recreation uses designed placeholder cards with Instagram-style chrome (avatar, handle, follow button, play, captions, watch bar) instead of real embeds.
-- **Design tokens** — colors/surfaces are centralized in `tokens.css`, letting components reference semantic tokens rather than hard-coded values.
+## Recreated behavior
 
-## Known Differences
+- Layout, section spacing, balanced hero headline, SVG wordmark, preview frame, typography, table and card breakpoints, mobile CTA and footer.
+- The same four public Instagram Reel embeds as the reference, loaded near the viewport. Selecting a card with click, Enter or Space fills its URL into the analyzer.
+- The analyzer opens `https://app.2mv.ai/` with the same source and URL parameters as the reference. Selecting or dropping a video shows its filename; the app completes the upload after handoff. No fabricated local analysis result is displayed.
+- FAQ accordion, adaptive floating navigation, mobile menu, reveal transitions and button hover states.
+- Newsletter submission includes pending, success and retryable error states. It uses the public subscription endpoint exposed by the reference site, only when the visitor submits. Set `VITE_NEWSLETTER_ENDPOINT` to override that service. The request is a JSON envelope with `resource: Newsletter`, `action: Subscribe` and a JSON-encoded `payload` containing `email` and `source: footer`.
+- Links to pages outside this recreation point to the original site; the Instagram Reels page stays local.
 
-- **Trending reel media** — the original shows real Instagram video embeds; this recreation uses designed poster placeholders (Instagram-style chrome + gradient/video-texture). Not real videos.
-- **Animations** — reveal and hover transitions are recreated; some original decorative animations (e.g., tagline clip-path reveals) are simplified or omitted.
-- **Imagery** — none of the original raster/media assets are copied; all visuals are CSS/SVG or placeholder.
-- **Content copy** — page copy mirrors the public page; subtle line-break/wrap differences may remain due to font-metric nuance.
+## Validation
 
-Back-end, auth, analytics, and any real data-fetching are intentionally out of scope for this frontend recreation.
+Visual measurements were compared at 1440, 1280, 768 and 390px. Automated browser tests cover 12 widths around responsive breakpoints, card selection, analyzer handoff, file state, FAQ, newsletter validation/failure/retry and mobile navigation.
+
+Tests intercept external media and subscription requests and capture analyzer handoffs. No test email is submitted and no test video is uploaded. Instagram media and the original app/subscription service remain externally hosted; their availability and live content can change. This repository does not implement the 2mv analysis backend.
+
+Local reference screenshots and measurements are stored under the git-ignored `reference/fixed-audit/` directory.

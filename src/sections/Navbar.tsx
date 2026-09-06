@@ -1,3 +1,4 @@
+import { siteHref } from '../lib/siteHref'
 import { useState } from 'react'
 import { ArrowUpRight, Menu, X } from '../components/Icons'
 
@@ -13,8 +14,8 @@ export default function Navbar() {
   return (
     <nav className="site-navbar" id="nav" aria-label="Main navigation">
       <div className={`site-navbar__inner has-cta ${open ? 'is-open' : ''}`}>
-        <a className="site-navbar__brand" aria-label="2mv service" href="/">
-          <span className="brand-wordmark site-navbar__wordmark">2mv</span>
+        <a className="site-navbar__brand" aria-label="2mv service" href={siteHref('/')}>
+          <span className="brand-wordmark site-navbar__wordmark" aria-hidden="true" />
         </a>
 
         <button
@@ -34,14 +35,14 @@ export default function Navbar() {
               key={l.label}
               className={`site-navbar__link ${l.active ? 'is-active' : ''}`}
               aria-current={l.active ? 'page' : undefined}
-              href={l.href}
+              href={siteHref(l.href)}
             >
               {l.label}
             </a>
           ))}
           <a
             className="site-navbar__cta book-demo-cta"
-            href="/book-a-demo"
+            href={siteHref('/book-a-demo')}
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -22,7 +22,7 @@
   max-width: var(--max);
   margin-inline: auto;
   width: 100%;
-  padding: clamp(2.6rem, 6.6vw, 7rem) clamp(1.25rem, 4vw, 4rem);
+  padding: clamp(3.4rem, 7vw, 6.5rem) clamp(1.25rem, 4vw, 4rem);
 }
 
 /* ===== Reveal-on-scroll ===== */
@@ -99,11 +99,13 @@
 }
 .site-navbar__wordmark {
   width: 58px;
-  font-size: 1.32rem;
-  font-weight: 700;
-  letter-spacing: var(--tracking-adjust);
-  line-height: 1;
+}
+.brand-wordmark {
+  aspect-ratio: 1184 / 316;
+  background-color: currentColor;
+  flex: none;
   display: block;
+  mask: url('/2mv.svg') center / contain no-repeat;
 }
 .site-navbar__switch {
   flex: 1 0 0;
@@ -467,7 +469,7 @@
   display: none;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 720px) {
   .site-navbar {
     width: calc(100% - 24px);
     top: 8px;
