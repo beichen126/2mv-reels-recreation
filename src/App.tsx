@@ -1,4 +1,5 @@
 import { useReveal } from './hooks/useReveal'
+import { useAdaptiveNav } from './hooks/useAdaptiveNav'
 import Navbar from './sections/Navbar'
 import Hero from './sections/Hero'
 import WhySection from './sections/WhySection'
@@ -15,6 +16,7 @@ import Footer from './sections/Footer'
 
 export default function App() {
   useReveal()
+  useAdaptiveNav()
 
   return (
     <div className="page">

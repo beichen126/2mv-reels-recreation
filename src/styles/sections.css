@@ -384,10 +384,10 @@
   color: var(--on-dark-muted);
 }
 .az-cell-body.strong {
-  font-weight: 600;
+  font-weight: 400;
 }
 .is-dark .az-cell-body.strong {
-  color: var(--on-dark);
+  color: rgba(242, 242, 242, 0.75);
 }
 .az-weight {
   color: var(--ink);
@@ -440,9 +440,9 @@
   line-height: 1.5;
 }
 .az-beat-label .idx {
-  color: var(--green-ink);
+  color: var(--grey-300);
   margin-right: 0.5rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 .az-beat-label .idx span {
   font-size: 0.82em;
@@ -496,12 +496,12 @@
   display: flex;
 }
 .az-mark--x {
-  color: var(--grey-500);
-  background: #0a0a090f;
+  color: var(--ink);
+  background: rgba(10, 10, 9, 0.1);
 }
 .az-mark--check {
-  color: #fff;
-  background: var(--ink);
+  color: var(--ink);
+  background: var(--green);
 }
 
 /* ======================= FAQ ======================= */
